@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root{
+    --primary-clr:#026467;
+    --secondary-clr:#e5f5ea;
+    --body-text-clr:#596392;
+    --navbar-footer-clr:#f9f9f9;
+}
+body{
+    font-family: "roboto";
+    font-size: 12px;
+    color: var(--body-text-clr);
+}
+
+.site-logo{
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: var(--secondary-clr);
+  color: var(--primary-clr);
+  font-size: 1.5rem;
+}
+
+.app-body{
+  min-height: 35vh;
+  margin-top: 150px;
+}
+
+.bg-theme{
+  background-color: var(--primary-clr);
+}
+.shadow-effect {
+  border: none;
+  box-shadow: 0 0 33px -10px #0005;
+}
+
+.card{
+  background-color: var(--secondary-clr);
+  border: none;
+  box-shadow: 0 0 33px  -10px #0005;
+}
+input[type=text],input[type=email]{
+  height: 60px;
+  padding-left:20px ;
+  font-size: 12px;
+  width: 100%;
+}
+.btn-sub{
+  height: 58px;
+  border: none;
+  font-size: 13px;
+  background-color: var(--primary-clr);
+}
+.sub-text{
+  width: 500px;
+}
+
+.bg-theme{
+  background-color: var(--primary-clr);
+}
+
+.bg-secondary-theme{
+  background-color: var(--secondary-clr);
+}
+
+.text-theme-primary{
+  color: var(--primary-clr);
+}
