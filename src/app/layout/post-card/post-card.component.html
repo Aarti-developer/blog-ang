@@ -1,4 +1,5 @@
-<div class="card shadow-effect" *ngIf="postData">
+
+<div class="card shadow-effect" *ngIf="postData" [routerLink]="['/post',postData.id]">
     <img src="{{ postData.data.postImgPath }}" alt="images" class="card-img-top">
     <div class="card-body"> 
         <small class="bg-light text-danger text-center">{{postData.data.category.category}}</small>

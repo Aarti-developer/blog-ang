@@ -9,14 +9,19 @@ import { PostsService } from 'src/app/services/posts.service';
 export class HomeComponent implements OnInit {
 
   featuredPostsArray:any;
+  latestPostsArray:any;
 
   constructor( private postService: PostsService ){ 
-    this.postService.loadFeatured().subscribe(val =>{
-      this.featuredPostsArray = val;
-      console.log(this.featuredPostsArray);
-    })
+   
   }
   ngOnInit(): void {
-    
+    this.postService.loadFeatured().subscribe(val =>{
+      this.featuredPostsArray = val;
+      // console.log(this.featuredPostsArray);
+    });
+
+    this.postService.loadLatest().subscribe(val =>{
+      this.latestPostsArray = val;
+    })
   }
 }
